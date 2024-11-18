@@ -1,0 +1,167 @@
+:root {
+    --soft-pink: #E0E0E0;
+    --soft-blue: #e5e8f8;
+    --soft-purple: #e9e5f8;
+    --soft-green: #e5f8e8;
+    --soft-yellow: #f8f5e5;
+    --text-primary: #282828;
+    --text-secondary: #787878;
+    --shadow-color: #787878;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #fafafa;
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px var(--shadow-color);
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--soft-pink);
+    padding: 80px 0;
+}
+
+.hero h1 {
+    color: var(--text-primary);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Course Cards */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Specific styling for each education level */
+.card[title="SD"] {
+    background: linear-gradient(145deg, white, var(--soft-blue));
+}
+
+.card[title="SMP"] {
+    background: linear-gradient(145deg, white, var(--soft-purple));
+}
+
+.card[title="SMA"] {
+    background: linear-gradient(145deg, white, var(--soft-green));
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--text-primary);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--text-secondary);
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #E0E0E0;
+    padding: 60px 0;
+}
+
+.contact-icons {
+    margin-top: 2rem;
+}
+
+.contact-icons a {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: var(--text-secondary);
+    transform: scale(1.2);
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.modal-header {
+    background-color: var(--soft-blue);
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    padding: 1.5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 0.8rem;
+    border: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-primary);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
